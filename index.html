@@ -57,7 +57,48 @@
             </ul>
           </div>
         </div>
-        <div class="main-area--col">right</div>
+        <div class="main-area--col">
+          <form id="competition-form">
+            <h2>Let's Play a Game...</h2>
+            <div class="form-item">
+              <label for="name">Pick a Name</label>
+              <select name="name" id="name">
+                <option value="Mark">Mark</option>
+                <option value="Aaron">Aaron</option>
+                <option value="Alex">Alex</option>
+                <option value="Chris">Chris</option>
+              </select>
+            </div>
+            <div class="form-item" id="radio-buttons">
+              <label for="wins">Wins</label>
+              <input
+                type="radio"
+                value="Wins"
+                name="outcome"
+                id="wins"
+                checked="checked"
+              />
+              <label for="wins">Loses</label>
+              <input type="radio" value="Loses" name="outcome" id="loses" />
+            </div>
+            <div class="form-item">
+              <input
+                type="submit"
+                value="Go!"
+                id="submit"
+                class="btn btn-form"
+              />
+            </div>
+          </form>
+          <div class="results">
+            Mark Wins!
+          </div>
+          <div class="next-area">
+            <a href="/challenge2/" class="btn btn-form"
+              >Head to Challenge 2...</a
+            >
+          </div>
+        </div>
       </div>
       <footer>
         <a href="htts://squarestardigital.com" target="_blank" class="btn"

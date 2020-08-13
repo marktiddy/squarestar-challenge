@@ -8,9 +8,6 @@ $mainFont: 'Montserrat', sans-serif;
 
 //Colors
 $orange: #F15A2C;
-$light: #D5F4FF;
-$lightBlue: #7CB0E0;
-$darkBlue: #5B7A98;
 $white: #FFFFFF;
 $black: #313639;
 
@@ -49,7 +46,7 @@ header img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
-  text-align:center;
+ 
 }
 
 .main-area h2 {
@@ -86,6 +83,41 @@ header img {
   padding: 10px;
 }
 
+#competition-form select {
+  font-family: $mainFont;
+  padding: 5px;
+  font-size: 1em;
+  font-weight: $lightText;
+  margin-left: 10px;
+  position: relative;
+}
+
+#radio-buttons {
+  display:flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.form-item {
+  text-align: left;
+  padding: 10px 0;
+  font-weight: $lightText;
+  display: flex;
+  place-items: center;
+}
+
+.results {
+  color: $orange;
+  margin-top: 40px;
+}
+
+.next-area {
+  margin-top: 40px;
+}
+
+
+
 footer {
   position: absolute;
   bottom:0;
@@ -104,7 +136,7 @@ footer {
   border-radius: 5px;
   text-decoration: none;
   color: $orange;
-  background: linear-gradient(to right, $light 50%, $black 50%);
+  background: linear-gradient(to right, $white 50%, $black 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 500ms;
@@ -116,6 +148,23 @@ font-size: 1.1em;
 background-position: left bottom;
 color: $orange;
 }
+
+.btn-form {
+  border: none;
+  box-shadow: none;
+  background: linear-gradient(to right, $black 50%, $orange 50%);
+  background-position: right bottom;
+  background-size: 200% 100%;
+  color: $white;
+  font-size: 1em;
+}
+
+.btn-form:hover {
+  font-size: 1em;
+  background-position: left bottom;
+}
+
+
 
 @media only screen and (max-width: 600px) {
   .main-area {

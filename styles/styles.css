@@ -39,7 +39,6 @@ header img {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
-  text-align: center;
 }
 
 .main-area h2 {
@@ -76,6 +75,45 @@ header img {
   padding: 10px;
 }
 
+#competition-form select {
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  font-size: 1em;
+  font-weight: 300;
+  margin-left: 10px;
+  position: relative;
+}
+
+#radio-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.form-item {
+  text-align: left;
+  padding: 10px 0;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+}
+
+.results {
+  color: #F15A2C;
+  margin-top: 40px;
+}
+
+.next-area {
+  margin-top: 40px;
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -98,8 +136,8 @@ footer {
   border-radius: 5px;
   text-decoration: none;
   color: #F15A2C;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #D5F4FF), color-stop(50%, #313639));
-  background: linear-gradient(to right, #D5F4FF 50%, #313639 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), color-stop(50%, #313639));
+  background: linear-gradient(to right, #FFFFFF 50%, #313639 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   -webkit-transition: all 500ms;
@@ -111,6 +149,23 @@ footer {
   font-size: 1.1em;
   background-position: left bottom;
   color: #F15A2C;
+}
+
+.btn-form {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #313639), color-stop(50%, #F15A2C));
+  background: linear-gradient(to right, #313639 50%, #F15A2C 50%);
+  background-position: right bottom;
+  background-size: 200% 100%;
+  color: #FFFFFF;
+  font-size: 1em;
+}
+
+.btn-form:hover {
+  font-size: 1em;
+  background-position: left bottom;
 }
 
 @media only screen and (max-width: 600px) {
