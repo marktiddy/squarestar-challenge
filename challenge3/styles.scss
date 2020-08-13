@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+//Variables
+$lightText: 300;
+$mediumText: 400;
+$boldText: 600;
+$mainFont: 'Montserrat', sans-serif;
+
+//Colors
+$orange: #F15A2C;
+$white: #FFFFFF;
+$black: #313639;
+
+
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+body {
+  font-family: $mainFont;
+  font-size: 16px;
+}
+
+p {
+  line-height: 1.3em;
+  font-weight: $lightText;
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  background: $orange;
+}
+
+.main-area {
+background: $black;
+width: 80%;
+min-height: 60vh;
+max-height: 90vh;
+color: $white;
+border-radius: 5px;
+padding: 10px;
+text-align: center;
+}
+
+.section {
+  padding: 30px;
+  font-weight: $lightText;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+input {
+  margin: 0px 20px;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: $mainFont;
+}
+
+
+.divider {
+  background: $orange;
+  height: 2px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn {
+  text-align: center;
+  padding: 5px;
+  font-weight: $mediumText;
+  border-radius: 5px;
+  text-decoration: none;
+  color: $orange;
+  background: linear-gradient(to right, $white 50%, $black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 500ms;
+}
+
+.btn:hover {
+cursor: pointer;
+font-size: 1.1em;
+background-position: left bottom;
+color: $orange;
+}
+
+.btn-form {
+  border: none;
+  box-shadow: none;
+  background: linear-gradient(to right, $black 50%, $orange 50%);
+  background-position: right bottom;
+  background-size: 200% 100%;
+  color: $white;
+  font-size: 1em;
+}
+
+.btn-form:hover {
+  font-size: 1em;
+  background-position: left bottom;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-area {
+    width: 95%;
+    max-height: auto;
+  }
+}

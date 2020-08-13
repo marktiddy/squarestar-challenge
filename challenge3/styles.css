@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+p {
+  line-height: 1.3em;
+  font-weight: 300;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  background: #F15A2C;
+}
+
+.main-area {
+  background: #313639;
+  width: 80%;
+  min-height: 60vh;
+  max-height: 90vh;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.section {
+  padding: 30px;
+  font-weight: 300;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+}
+
+input {
+  margin: 0px 20px;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.divider {
+  background: #F15A2C;
+  height: 2px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn {
+  text-align: center;
+  padding: 5px;
+  font-weight: 400;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #F15A2C;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), color-stop(50%, #313639));
+  background: linear-gradient(to right, #FFFFFF 50%, #313639 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.btn:hover {
+  cursor: pointer;
+  font-size: 1.1em;
+  background-position: left bottom;
+  color: #F15A2C;
+}
+
+.btn-form {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #313639), color-stop(50%, #F15A2C));
+  background: linear-gradient(to right, #313639 50%, #F15A2C 50%);
+  background-position: right bottom;
+  background-size: 200% 100%;
+  color: #FFFFFF;
+  font-size: 1em;
+}
+
+.btn-form:hover {
+  font-size: 1em;
+  background-position: left bottom;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-area {
+    width: 95%;
+    max-height: auto;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

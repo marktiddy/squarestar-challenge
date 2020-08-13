@@ -20,6 +20,16 @@
       <div class="main-area">
         <div class="main-area--col">
           <div class="main-area--list">
+            <h2>My Favourite TV Shows</h2>
+            <ul>
+              <li><i class="fas fa-tv"></i>Lost</li>
+              <li><i class="fas fa-tv"></i>24</li>
+              <li><i class="fas fa-tv"></i>Friends</li>
+              <li><i class="fas fa-tv"></i>How I Met Your Mother</li>
+              <li><i class="fas fa-tv"></i>Gossip Girl (Sorry!)</li>
+            </ul>
+          </div>
+          <div class="main-area--list">
             <h2>My Favourite Albums</h2>
             <ul>
               <!-- Should this decision be harder than the challenge?! -->
@@ -45,17 +55,6 @@
               </li>
             </ul>
           </div>
-
-          <div class="main-area--list">
-            <h2>My Favourite TV Shows</h2>
-            <ul>
-              <li><i class="fas fa-tv"></i>Lost</li>
-              <li><i class="fas fa-tv"></i>24</li>
-              <li><i class="fas fa-tv"></i>Friends</li>
-              <li><i class="fas fa-tv"></i>How I Met Your Mother</li>
-              <li><i class="fas fa-tv"></i>Gossip Girl (Sorry!)</li>
-            </ul>
-          </div>
         </div>
         <div class="main-area--col">
           <form id="competition-form">
@@ -70,16 +69,21 @@
               </select>
             </div>
             <div class="form-item" id="radio-buttons">
-              <label for="wins">Wins</label>
-              <input
-                type="radio"
-                value="Wins"
-                name="outcome"
-                id="wins"
-                checked="checked"
-              />
-              <label for="wins">Loses</label>
-              <input type="radio" value="Loses" name="outcome" id="loses" />
+              <label for="wins" class="radio-container"
+                >Wins
+                <input
+                  type="radio"
+                  value="Wins"
+                  name="outcome"
+                  id="wins"
+                  checked="checked" />
+                <span class="checkmark"></span
+              ></label>
+              <label for="loses" class="radio-container"
+                >Loses
+                <input type="radio" value="Loses" name="outcome" id="loses" />
+                <span class="checkmark"></span
+              ></label>
             </div>
             <div class="form-item">
               <input
@@ -90,14 +94,6 @@
               />
             </div>
           </form>
-          <div class="results">
-            Mark Wins!
-          </div>
-          <div class="next-area">
-            <a href="/challenge2/" class="btn btn-form"
-              >Head to Challenge 2...</a
-            >
-          </div>
         </div>
       </div>
       <footer>
@@ -105,6 +101,9 @@
           >VISIT SQUARESTAR DIGITAL</a
         >
       </footer>
+    </div>
+    <div class="next-area">
+      <a href="/challenge2/" class="btn btn-form">Head to Challenge 2...</a>
     </div>
   </body>
   <script src="scripts/main.js"></script>
