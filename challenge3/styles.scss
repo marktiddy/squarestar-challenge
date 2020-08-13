@@ -57,6 +57,7 @@ form {
   display: flex;
   justify-content: center;
   place-items: center;
+  margin:10px;
 }
 
 input {
@@ -72,6 +73,7 @@ input {
   height: 2px;
   width: 90%;
   margin: 0 auto;
+  
 }
 
 .btn {
@@ -113,5 +115,19 @@ color: $orange;
   .main-area {
     width: 95%;
     max-height: auto;
+  }
+
+  form {
+    margin: 10px 20px;
+    flex-direction: column;
+
+  }
+
+  label {
+    padding: 20px; 
+  }
+
+  .btn {
+    margin-top: 20px;
   }
 }

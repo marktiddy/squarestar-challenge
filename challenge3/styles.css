@@ -53,6 +53,7 @@ form {
       -ms-flex-pack: center;
           justify-content: center;
   place-items: center;
+  margin: 10px;
 }
 
 input {
@@ -112,6 +113,19 @@ input {
   .main-area {
     width: 95%;
     max-height: auto;
+  }
+  form {
+    margin: 10px 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  label {
+    padding: 20px;
+  }
+  .btn {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

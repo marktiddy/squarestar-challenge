@@ -183,7 +183,7 @@ header img {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 75px;
@@ -214,7 +214,6 @@ footer {
 
 .btn:hover {
   cursor: pointer;
-  font-size: 1.1em;
   background-position: left bottom;
   color: #F15A2C;
 }
@@ -232,7 +231,6 @@ footer {
 }
 
 .btn-form:hover {
-  font-size: 1em;
   background-position: left bottom;
 }
 

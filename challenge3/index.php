@@ -1,4 +1,4 @@
-<?php echo 'hello';
+<?php
 //Form Code
 $name;
 if (isset($_GET['name'])) {
