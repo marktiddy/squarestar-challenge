@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  background: #313639;
+  height: 150px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header img {
+  max-height: 130px;
+}
+
+.main-area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.main-area h2 {
+  color: #F15A2C;
+  font-size: 1.25em;
+  margin: 15px 0 10px 0;
+  text-align: left;
+}
+
+.main-area--list {
+  margin: 10px;
+  width: 100%;
+}
+
+.main-area ul {
+  text-align: left;
+  color: #313639;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5em;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.main-area ul i {
+  margin-left: 15px;
+  margin-right: 5px;
+  color: #F15A2C;
+}
+
+.main-area--col {
+  padding: 10px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  background: #F15A2C;
+}
+
+.btn {
+  text-align: center;
+  padding: 10px;
+  font-weight: 400;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #F15A2C;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #D5F4FF), color-stop(50%, #313639));
+  background: linear-gradient(to right, #D5F4FF 50%, #313639 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.btn:hover {
+  cursor: pointer;
+  font-size: 1.1em;
+  background-position: left bottom;
+  color: #F15A2C;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-area {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  footer {
+    position: static;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

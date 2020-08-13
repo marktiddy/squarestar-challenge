@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+//Variables
+$lightText: 300;
+$mediumText: 400;
+$boldText: 600;
+$mainFont: 'Montserrat', sans-serif;
+
+//Colors
+$orange: #F15A2C;
+$light: #D5F4FF;
+$lightBlue: #7CB0E0;
+$darkBlue: #5B7A98;
+$white: #FFFFFF;
+$black: #313639;
+
+
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+body {
+  font-family: $mainFont;
+  font-size: 16px;
+ 
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+ 
+}
+header {
+  background: $black;
+  height: 150px;
+  padding: 5px;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
+header img {
+  max-height: 130px;
+}
+
+.main-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  text-align:center;
+}
+
+.main-area h2 {
+  color: $orange;
+  font-size: 1.25em;
+  margin: 15px 0 10px 0;
+  text-align: left;
+}
+
+.main-area--list {
+ margin: 10px;
+ width: 100%;
+}
+
+.main-area ul {
+  text-align:left;
+  color: $black;
+  font-size: 1em;
+  font-weight: $lightText;
+  line-height: 1.5em;
+  list-style:none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.main-area ul i {
+  margin-left: 15px;
+  margin-right: 5px;
+  color: $orange;
+}
+
+.main-area--col {
+  padding: 10px;
+}
+
+footer {
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  height: 75px;
+  justify-content: center;
+  display: flex;
+  place-items: center;
+  background: $orange;
+}
+
+.btn {
+  text-align: center;
+  padding: 10px;
+  font-weight: $mediumText;
+  border-radius: 5px;
+  text-decoration: none;
+  color: $orange;
+  background: linear-gradient(to right, $light 50%, $black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 500ms;
+}
+
+.btn:hover {
+cursor: pointer;
+font-size: 1.1em;
+background-position: left bottom;
+color: $orange;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-area {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+  position: static;
+  }
+
+}
